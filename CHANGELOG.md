@@ -2,6 +2,12 @@
 
 All notable changes to the Cyberdeck 2025 theme extension.
 
+## [1.0.1] - 2025-10-06
+
+### Fixed
+- Corrected repository URLs in package.json to point to the correct GitHub repository (`cyberdeck-2025_vscode_theme`)
+- Updated all documentation links to use the correct repository URL
+
 ## [1.0.0] - 2025-10-06
 
 ### 🎉 Initial Release
