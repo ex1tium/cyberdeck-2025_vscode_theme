@@ -2,10 +2,10 @@
 
 > *A retro-futuristic neural interface for the modern code cowboy.*
 
-[![Version](https://img.shields.io/visual-studio-marketplace/v/YOUR_PUBLISHER_ID.cyberdeck-2025?style=flat-square&color=b141f1)](https://marketplace.visualstudio.com/items?itemName=YOUR_PUBLISHER_ID.cyberdeck-2025)
-[![Installs](https://img.shields.io/visual-studio-marketplace/i/YOUR_PUBLISHER_ID.cyberdeck-2025?style=flat-square&color=00ff88)](https://marketplace.visualstudio.com/items?itemName=YOUR_PUBLISHER_ID.cyberdeck-2025)
-[![Rating](https://img.shields.io/visual-studio-marketplace/r/YOUR_PUBLISHER_ID.cyberdeck-2025?style=flat-square&color=f9c80e)](https://marketplace.visualstudio.com/items?itemName=YOUR_PUBLISHER_ID.cyberdeck-2025)
-[![License](https://img.shields.io/github/license/YOUR_USERNAME/cyberdeck-2025?style=flat-square&color=ff2289)](LICENSE)
+[![Version](https://img.shields.io/visual-studio-marketplace/v/ex1tium.cyberdeck-2025?style=flat-square&color=b141f1)](https://marketplace.visualstudio.com/items?itemName=ex1tium.cyberdeck-2025)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/ex1tium.cyberdeck-2025?style=flat-square&color=00ff88)](https://marketplace.visualstudio.com/items?itemName=ex1tium.cyberdeck-2025)
+[![Rating](https://img.shields.io/visual-studio-marketplace/r/ex1tium.cyberdeck-2025?style=flat-square&color=f9c80e)](https://marketplace.visualstudio.com/items?itemName=ex1tium.cyberdeck-2025)
+[![License](https://img.shields.io/github/license/ex1tium/cyberdeck-2025?style=flat-square&color=ff2289)](LICENSE)
 
 **Cyberdeck 2025** is a cyberpunk-inspired dark theme for Visual Studio Code featuring deep purple backgrounds, vibrant neon accents, and comprehensive syntax highlighting. Designed for developers who want an immersive, high-contrast coding experience with modern semantic highlighting support.
 
@@ -66,21 +66,9 @@
 
 ## 📸 Screenshots
 
-### TypeScript/JavaScript
-![TypeScript Example](screenshots/typescript.png)
-*Semantic highlighting with distinct colors for types, interfaces, and functions*
-
-### Rust
-![Rust Example](screenshots/rust.png)
-*Complete coverage for lifetimes, macros, and ownership keywords*
-
-### Python
-![Python Example](screenshots/python.png)
-*Decorators, type hints, and magic methods beautifully styled*
-
-### UI Overview
-![UI Overview](screenshots/ui-overview.png)
-*Consistent cyberpunk aesthetic across all VS Code elements*
+### Cyberdeck 2025 Theme Preview
+![Cyberdeck 2025 Theme](screenshots/screenshot.png)
+*Experience the retro-futuristic cyberpunk aesthetic with deep purple backgrounds, vibrant neon accents, and comprehensive syntax highlighting*
 
 ---
 
@@ -104,7 +92,7 @@ code --install-extension cyberdeck-2025-1.0.0.vsix
 
 ### Manual Installation
 
-1. Download the latest release from [GitHub Releases](https://github.com/YOUR_USERNAME/cyberdeck-2025/releases)
+1. Download the latest release from [GitHub Releases](https://github.com/ex1tium/cyberdeck-2025/releases)
 2. Extract to your VS Code extensions folder:
    - **Windows**: `%USERPROFILE%\.vscode\extensions`
    - **macOS/Linux**: `~/.vscode/extensions`
@@ -273,17 +261,17 @@ This theme is licensed under the [MIT License](LICENSE).
 
 ## 🔗 Links
 
-- [GitHub Repository](https://github.com/YOUR_USERNAME/cyberdeck-2025)
-- [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=YOUR_PUBLISHER_ID.cyberdeck-2025)
-- [Open VSX Registry](https://open-vsx.org/extension/YOUR_PUBLISHER_ID/cyberdeck-2025)
-- [Issue Tracker](https://github.com/YOUR_USERNAME/cyberdeck-2025/issues)
+- [GitHub Repository](https://github.com/ex1tium/cyberdeck-2025)
+- [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ex1tium.cyberdeck-2025)
+- [Open VSX Registry](https://open-vsx.org/extension/ex1tium/cyberdeck-2025)
+- [Issue Tracker](https://github.com/ex1tium/cyberdeck-2025/issues)
 - [Changelog](CHANGELOG.md)
 
 ---
 
 <div align="center">
 
-**[Install Now](https://marketplace.visualstudio.com/items?itemName=YOUR_PUBLISHER_ID.cyberdeck-2025)** | **[View Source](https://github.com/YOUR_USERNAME/cyberdeck-2025)** | **[Report Issue](https://github.com/YOUR_USERNAME/cyberdeck-2025/issues)**
+**[Install Now](https://marketplace.visualstudio.com/items?itemName=ex1tium.cyberdeck-2025)** | **[View Source](https://github.com/ex1tium/cyberdeck-2025)** | **[Report Issue](https://github.com/ex1tium/cyberdeck-2025/issues)**
 
 *Made with 💜 for developers who code in style*
 
