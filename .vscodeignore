@@ -1,0 +1,33 @@
+# Development files
+.vscode/**
+.vscode-test/**
+.git/**
+.gitignore
+.gitattributes
+
+# Documentation (development only)
+docs/**
+
+# Scripts (maintenance tools - not needed in published extension)
+scripts/**
+
+# Old theme backup
+old_theme/**
+
+# Node modules and dependencies
+node_modules/**
+package-lock.json
+
+# Development dependencies
+.eslintrc.json
+.prettierrc
+tsconfig.json
+
+# Keep these files in the published extension:
+# README.md
+# CHANGELOG.md
+# LICENSE
+# icon.png
+# screenshot*.png
+# package.json
+# themes/**
