@@ -193,7 +193,6 @@ This theme is licensed under the [MIT License](LICENSE).
 
 - [GitHub Repository](https://github.com/ex1tium/cyberdeck-2025_vscode_theme)
 - [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ex1tium.cyberdeck-2025)
-- [Open VSX Registry](https://open-vsx.org/extension/ex1tium/cyberdeck-2025)
 - [Issue Tracker](https://github.com/ex1tium/cyberdeck-2025_vscode_theme/issues)
 - [Changelog](CHANGELOG.md)
 
@@ -203,6 +202,6 @@ This theme is licensed under the [MIT License](LICENSE).
 
 **[Install Now](https://marketplace.visualstudio.com/items?itemName=ex1tium.cyberdeck-2025)** | **[View Source](https://github.com/ex1tium/cyberdeck-2025_vscode_theme)** | **[Report Issue](https://github.com/ex1tium/cyberdeck-2025_vscode_theme/issues)**
 
-*Made with 💜 for developers who code in style*
+*Made with 💜 for code cowboys everywhere.*
 
 </div>
