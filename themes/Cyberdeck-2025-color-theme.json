@@ -609,8 +609,10 @@
       "comment.block.documentation.scala variable.parameter",
       "comment.block.javadoc.java keyword",
       "comment.block.javadoc.java variable.parameter.java",
+      "comment.block.lua",
       "comment.block.rust",
       "comment.line.documentation.rust",
+      "comment.line.double-dash.documentation.lua",
       "comment.line.double-slash.rust",
       "comment.line.roxygen.r keyword",
       "comment.line.roxygen.r variable.parameter.r",
@@ -724,8 +726,10 @@
       "keyword.control.def",
       "keyword.control.fun",
       "keyword.control.function-end.lua",
+      "keyword.control.goto.lua",
       "keyword.declaration.dart",
       "keyword.function.go",
+      "keyword.local.lua",
       "keyword.operator.macro.dollar.rust",
       "keyword.other.base.cs",
       "keyword.other.declaration-specifier.swift",
@@ -830,6 +834,7 @@
       "source.go keyword",
       "source.lua storage.type.function",
       "source.nim keyword.other",
+      "string.tag.lua",
       "source.nim keyword.other.common.function",
       "source.objc keyword.other.property.attribute",
       "source.ocaml constant.language constant.numeric entity.other.attribute-name.id.css",
@@ -876,6 +881,9 @@
       "meta.bracket.julia",
       "meta.link.inline punctuation.definition.string",
       "punctuation.definition.list_item",
+      "punctuation.definition.parameters.begin.lua",
+      "punctuation.definition.parameters.finish.lua",
+      "punctuation.separator.arguments.lua",
       "punctuation.separator.key-value",
       "source meta.brace",
       "source punctuation",
@@ -897,7 +905,10 @@
     "scope": [
       "comment",
       "comment.block.documentation punctuation.definition.bracket",
+      "comment.line.double-dash.lua",
+      "comment.line.shebang.lua",
       "punctuation.definition.comment",
+      "punctuation.definition.comment.lua",
       "punctuation.definition.tag",
       "source.ocaml comment constant.regexp meta.separator"
     ],
@@ -960,10 +971,12 @@
       "source.vala storage.type",
       "storage.class.std.rust",
       "storage.modifier.lifetime.rust",
+      "storage.type.attribute.lua",
       "storage.type.built-in",
       "storage.type.c",
       "storage.type.core.rust",
       "storage.type.cs",
+      "storage.type.generic.lua",
       "storage.type.integral",
       "storage.type.objc",
       "storage.type.php",
@@ -976,6 +989,7 @@
       "support.class.crystal",
       "support.type.builtin",
       "support.type.julia",
+      "support.type.lua",
       "support.type.primitive",
       "support.type.primitive.ts",
       "support.type.vb",
@@ -1030,6 +1044,7 @@
       "constant.character.escape punctuation.definition.keyword",
       "constant.other.haskell",
       "entity.global.clojure",
+      "entity.name.class.lua",
       "entity.name.function-table.lua",
       "entity.name.type",
       "entity.name.type.class",
@@ -1066,6 +1081,7 @@
       "string.quoted.other.literal.upper.crystal punctuation.definition.string",
       "string.replacement.apacheconf",
       "support.class",
+      "support.class.lua",
       "support.constant.handlebars",
       "support.constant.math",
       "support.function.macro.julia",
@@ -1083,7 +1099,10 @@
     "scope": [
       "constant.character.escape.backslash.rust",
       "constant.character.escape.bit.rust",
+      "constant.character.escape.byte.lua",
+      "constant.character.escape.lua",
       "constant.character.escape.rust",
+      "constant.character.escape.unicode.lua",
       "constant.character.escape.unicode.punctuation.rust",
       "constant.character.escape.unicode.rust"
     ],
@@ -1107,7 +1126,9 @@
       "markup.inline.raw.string",
       "markup.inserted.diff",
       "markup.raw.texttt",
+      "punctuation.definition.string.begin.lua",
       "punctuation.definition.string.begin.ts",
+      "punctuation.definition.string.end.lua",
       "punctuation.definition.string.end.ts",
       "punctuation.definition.string.template",
       "source.css support.constant",
@@ -1118,8 +1139,11 @@
       "string.quoted.double.heredoc",
       "string.quoted.double.interpolated.crystal",
       "string.quoted.double.interpolated.crystal punctuation.definition.string",
+      "string.quoted.double.lua",
       "string.quoted.interpolated.vala",
       "string.quoted.interpolated.vala punctuation.definition.string",
+      "string.quoted.other.multiline.lua",
+      "string.quoted.single.lua",
       "string.regexp.apacheconf",
       "string.template",
       "text.html.derivative",
@@ -1134,8 +1158,13 @@
     "scope": [
       "constant.integer.apacheconf",
       "constant.language",
+      "constant.language.lua",
       "constant.language punctuation.definition.variable",
       "constant.numeric",
+      "constant.numeric.float.hexadecimal.lua",
+      "constant.numeric.float.lua",
+      "constant.numeric.integer.hexadecimal.lua",
+      "constant.numeric.integer.lua",
       "constant.others.fsharp",
       "keyword.operator.null-conditional.cs",
       "keyword.operator.nullable-type",
@@ -1217,10 +1246,12 @@
       "entity.other.attribute-name.pseudo-element.css punctuation.definition.entity.css",
       "keyword",
       "keyword.control",
+      "keyword.control.lua",
       "keyword.control punctuation.definition.function",
       "keyword.control.class.ruby",
       "keyword.control.def.ruby",
       "keyword.import",
+      "keyword.operator.lua",
       "keyword.other.class.fileds",
       "keyword.other.substitution",
       "keyword.other.template",
@@ -1315,7 +1346,8 @@
       "storage.type.objc",
       "support.function.builtin.rust",
       "support.function.textbf",
-      "variable.parameter"
+      "variable.parameter",
+      "variable.parameter.function.lua"
     ],
     "settings": {
       "fontStyle": "bold"
@@ -1332,6 +1364,7 @@
   {
     "scope": [
       "entity.name.function",
+      "entity.name.function.lua",
       "entity.name.function.rust",
       "entity.name.section.fsharp entity.name.section.fsharp",
       "keyword.control.cucumber.table",
@@ -1348,7 +1381,10 @@
       "source.tf support.class",
       "string.other.link",
       "support.function.any-method",
+      "support.function.any-method.lua",
       "support.function.go",
+      "support.function.library.lua",
+      "support.function.lua",
       "support.other.variable",
       "support.type.property-name",
       "support.type.vendored",
@@ -1440,6 +1476,7 @@
       "variable.other",
       "variable.other.class",
       "variable.other.constant.elixir",
+      "variable.other.lua",
       "variable.other.normal punctuation.definition.variable.shell",
       "variable.parameter"
     ],
@@ -1450,7 +1487,8 @@
   {
     "scope": [
       "invalid",
-      "invalid.illegal"
+      "invalid.illegal",
+      "invalid.illegal.character.escape.lua"
     ],
     "settings": {
       "foreground": "#B16A4E",
@@ -1486,9 +1524,11 @@
   },
   {
     "scope": [
+      "entity.name.variable.lua",
       "meta.attribute.rust",
       "punctuation.brackets.attribute.rust",
-      "punctuation.definition.attribute.rust"
+      "punctuation.definition.attribute.rust",
+      "storage.type.annotation.lua"
     ],
     "settings": {
       "foreground": "#82aaff"
@@ -1524,6 +1564,7 @@
   },
   {
     "scope": [
+      "entity.other.attribute.lua",
       "punctuation.definition.typeparameters.begin.ts",
       "punctuation.definition.typeparameters.end.ts",
       "variable.other.property"
@@ -1591,6 +1632,7 @@
   },
   {
     "scope": [
+      "variable.language.self.lua",
       "variable.language.self.rust",
       "variable.language.super.rust",
       "variable.other.metavariable.name.rust",
