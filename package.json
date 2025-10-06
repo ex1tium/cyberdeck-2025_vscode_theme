@@ -11,11 +11,11 @@
   "icon": "icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ex1tium/cyberdeck-2025"
+    "url": "https://github.com/ex1tium/cyberdeck-2025_vscode_theme"
   },
-  "homepage": "https://github.com/ex1tium/cyberdeck-2025#readme",
+  "homepage": "https://github.com/ex1tium/cyberdeck-2025_vscode_theme#readme",
   "bugs": {
-    "url": "https://github.com/ex1tium/cyberdeck-2025/issues"
+    "url": "https://github.com/ex1tium/cyberdeck-2025_vscode_theme/issues"
   },
   "keywords": [
     "cyberdeck",
