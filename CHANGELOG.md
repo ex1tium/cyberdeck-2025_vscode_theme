@@ -2,6 +2,11 @@
 
 All notable changes to the Cyberdeck 2025 theme extension.
 
+## [1.0.2] - 2025-10-06
+
+### Fixed
+- Updated README
+
 ## [1.0.1] - 2025-10-06
 
 ### Fixed
