@@ -1,33 +1,37 @@
 # Development files
 .vscode/**
 .vscode-test/**
-.git/**
+.github/**
+node_modules/**
 .gitignore
 .gitattributes
 
-# Documentation (development only)
-docs/**
+# Build and test files
+*.vsix
+vsc-extension-quickstart.md
 
-# Scripts (maintenance tools - not needed in published extension)
+# Documentation that doesn't need to be in the package
+RELEASE.md
+.editorconfig
+
+# Scripts
 scripts/**
 
-# Old theme backup
-old_theme/**
+# Environment files
+.env
+.env.*
 
-# Node modules and dependencies
-node_modules/**
-package-lock.json
+# OS files
+.DS_Store
+Thumbs.db
+*.log
 
-# Development dependencies
-.eslintrc.json
-.prettierrc
-tsconfig.json
+# Keep these files in the package:
+# - README.md
+# - CHANGELOG.md
+# - LICENSE
+# - icon.png
+# - themes/**
+# - docs/** (color palette reference is useful)
+# - screenshots/** (for marketplace display)
 
-# Keep these files in the published extension:
-# README.md
-# CHANGELOG.md
-# LICENSE
-# icon.png
-# screenshot*.png
-# package.json
-# themes/**

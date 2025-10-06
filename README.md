@@ -1,6 +1,6 @@
 # Cyberdeck 2025 🌃
 
-> *A retro-futuristic neural interface for the modern code cowboy.*
+> *A neo-retro-futuristic neural interface for the modern code cowboy.*
 
 [![Version](https://img.shields.io/visual-studio-marketplace/v/ex1tium.cyberdeck-2025?style=flat-square&color=b141f1)](https://marketplace.visualstudio.com/items?itemName=ex1tium.cyberdeck-2025)
 [![Installs](https://img.shields.io/visual-studio-marketplace/i/ex1tium.cyberdeck-2025?style=flat-square&color=00ff88)](https://marketplace.visualstudio.com/items?itemName=ex1tium.cyberdeck-2025)
@@ -13,7 +13,7 @@
 
 ## ✨ Features
 
-### 🎨 Stunning Cyberpunk Aesthetic
+### 🎨 Cyberpunk Aesthetic
 - **Deep purple-black backgrounds** (`#130d1a`) for reduced eye strain
 - **Vibrant neon accents** in hot pink, cyan, and neon green
 - **High contrast** color scheme
@@ -117,73 +117,6 @@ code --install-extension cyberdeck-2025-1.0.0.vsix
 ### Full Palette
 
 See [docs/COLOR_PALETTE.md](docs/COLOR_PALETTE.md) for the complete color reference with RGB values, usage guidelines, and accessibility notes.
-
----
-
-## ⚙️ Customization
-
-### Override Specific Colors
-
-Add to your `settings.json`:
-
-```json
-{
-  "workbench.colorCustomizations": {
-    "[Cyberdeck 2025]": {
-      "editor.background": "#0a0610",
-      "editor.foreground": "#ffffff"
-    }
-  }
-}
-```
-
-### Customize Syntax Colors
-
-```json
-{
-  "editor.tokenColorCustomizations": {
-    "[Cyberdeck 2025]": {
-      "comments": "#8888cc",
-      "keywords": "#ff6c11",
-      "strings": "#ffdd00"
-    }
-  }
-}
-```
-
-### Adjust Semantic Highlighting
-
-```json
-{
-  "editor.semanticTokenColorCustomizations": {
-    "[Cyberdeck 2025]": {
-      "enabled": true,
-      "rules": {
-        "variable": "#61e2ff",
-        "function": "#54e484"
-      }
-    }
-  }
-}
-```
-
-### Common Customizations
-
-#### Darker Background
-```json
-"editor.background": "#0a0610"
-```
-
-#### Higher Contrast Text
-```json
-"editor.foreground": "#ffffff"
-```
-
-#### Less Intense Neon
-```json
-"activityBarBadge.background": "#8841d1",
-"statusBar.background": "#c92a7d"
-```
 
 ---
 

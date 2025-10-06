@@ -2,7 +2,7 @@
   "name": "cyberdeck-2025",
   "displayName": "Cyberdeck 2025",
   "description": "A retro-futuristic neural interface for the modern code cowboy. Cyberpunk-inspired dark theme with neon accents, semantic highlighting, and first-class support for TypeScript, Go, Rust, Python, and Java.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "ex1tium",
   "author": {
     "name": "ex1tium"
