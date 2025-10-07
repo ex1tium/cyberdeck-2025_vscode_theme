@@ -4,69 +4,138 @@ on:
   push:
     tags:
       - 'v*.*.*'  # Triggers on version tags like v1.0.0, v1.2.3, etc.
+      - '*.*.*'   # Also support tags without 'v' prefix like 1.0.0, 1.2.3, etc.
 
 jobs:
   release:
     runs-on: ubuntu-latest
-    
+
     permissions:
       contents: write  # Required to create releases and upload assets
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'npm'
-      
+
       - name: Install dependencies
         run: npm ci
-      
+
       - name: Install vsce
         run: npm install -g @vscode/vsce
-      
-      - name: Package extension
-        run: vsce package
-      
+
       - name: Get version from tag
         id: get_version
-        run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
+        run: |
+          # Extract version from tag (handle both v1.2.3 and 1.2.3 formats)
+          if [[ $GITHUB_REF == refs/tags/v* ]]; then
+            VERSION=${GITHUB_REF#refs/tags/v}
+          else
+            VERSION=${GITHUB_REF#refs/tags/}
+          fi
+          echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
+          echo "Tag version: $VERSION"
+
+      - name: Verify package.json version matches tag
+        run: |
+          PACKAGE_VERSION=$(node -p "require('./package.json').version")
+          TAG_VERSION="${{ steps.get_version.outputs.VERSION }}"
+          echo "Package.json version: $PACKAGE_VERSION"
+          echo "Tag version: $TAG_VERSION"
+          if [ "$PACKAGE_VERSION" != "$TAG_VERSION" ]; then
+            echo "❌ Error: package.json version ($PACKAGE_VERSION) does not match tag version ($TAG_VERSION)"
+            exit 1
+          fi
+          echo "✅ Version verification passed"
+
+      - name: Package extension
+        run: |
+          echo "📦 Creating VSIX package..."
+          vsce package
+
+          # Verify the VSIX file was created
+          VSIX_FILE=$(ls *.vsix | head -n 1)
+          if [ -z "$VSIX_FILE" ]; then
+            echo "❌ Error: No VSIX file was created"
+            exit 1
+          fi
+
+          echo "✅ Successfully created: $VSIX_FILE"
+          echo "VSIX_FILE=$VSIX_FILE" >> $GITHUB_ENV
+
+          # Show package contents for verification
+          echo "📋 Package contents:"
+          vsce ls
       
       - name: Create Release
-        uses: softprops/action-gh-release@v1
+        id: create_release
+        uses: softprops/action-gh-release@v2
         with:
           files: '*.vsix'
           generate_release_notes: true
           draft: false
           prerelease: false
+          name: "Cyberdeck 2025 v${{ steps.get_version.outputs.VERSION }}"
+          tag_name: ${{ github.ref_name }}
           body: |
             ## 🎉 Cyberdeck 2025 v${{ steps.get_version.outputs.VERSION }}
-            
-            ### Installation
-            
-            **From VS Code Marketplace (Recommended):**
+
+            A retro-futuristic neural interface for the modern code cowboy. This release includes the packaged VS Code extension ready for installation.
+
+            ### 📦 Installation Options
+
+            **🌟 From VS Code Marketplace (Recommended):**
             1. Open VS Code
-            2. Go to Extensions (Ctrl+Shift+X / Cmd+Shift+X)
-            3. Search for "Cyberdeck 2025"
-            4. Click Install
-            
-            **From VSIX file:**
+            2. Go to Extensions (`Ctrl+Shift+X` / `Cmd+Shift+X`)
+            3. Search for **"Cyberdeck 2025"**
+            4. Click **Install**
+
+            **📁 From VSIX file:**
             1. Download the `.vsix` file below
             2. Open VS Code
-            3. Go to Extensions (Ctrl+Shift+X / Cmd+Shift+X)
-            4. Click the "..." menu → "Install from VSIX..."
+            3. Go to Extensions (`Ctrl+Shift+X` / `Cmd+Shift+X`)
+            4. Click the **"..."** menu → **"Install from VSIX..."**
             5. Select the downloaded file
-            
-            **From command line:**
+
+            **💻 From command line:**
             ```bash
             code --install-extension cyberdeck-2025-${{ steps.get_version.outputs.VERSION }}.vsix
             ```
-            
-            ### What's Changed
-            See the [CHANGELOG](https://github.com/ex1tium/cyberdeck-2025_vscode_theme/blob/main/CHANGELOG.md) for detailed changes.
+
+            ### 📋 What's Included
+            - Complete cyberpunk-inspired dark theme
+            - Semantic highlighting support for 25+ languages
+            - Optimized for TypeScript, Rust, Go, Python, Java, and more
+            - Custom terminal colors and UI theming
+            - High contrast design for reduced eye strain
+
+            ### 📝 What's Changed
+            See the [CHANGELOG](https://github.com/ex1tium/cyberdeck-2025_vscode_theme/blob/main/CHANGELOG.md) for detailed changes in this version.
+
+            ### 🔗 Links
+            - [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ex1tium.cyberdeck-2025)
+            - [GitHub Repository](https://github.com/ex1tium/cyberdeck-2025_vscode_theme)
+            - [Documentation](https://github.com/ex1tium/cyberdeck-2025_vscode_theme#readme)
+            - [Report Issues](https://github.com/ex1tium/cyberdeck-2025_vscode_theme/issues)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Release Summary
+        run: |
+          echo "🎉 Successfully created release for Cyberdeck 2025 v${{ steps.get_version.outputs.VERSION }}"
+          echo "📦 VSIX file: cyberdeck-2025-${{ steps.get_version.outputs.VERSION }}.vsix"
+          echo "🔗 Release URL: ${{ steps.create_release.outputs.url }}"
+          echo ""
+          echo "✅ Release completed successfully!"
+          echo ""
+          echo "📋 Next steps:"
+          echo "1. The release is now available on GitHub with the VSIX file attached"
+          echo "2. Users can download and install the VSIX file directly"
+          echo "3. Consider publishing to VS Code Marketplace if not automated"
+          echo "4. Announce the release to users and community"
 
