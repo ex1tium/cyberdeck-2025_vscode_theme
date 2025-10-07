@@ -2,6 +2,11 @@
 
 All notable changes to the Cyberdeck 2025 theme extension.
 
+## [1.1.1] - 2025-10-07
+
+### Fixed
+- Accidentially included language demos and other helper files in the release package. These are available in the repository, but not necessary for the theme to function.
+
 ## [1.1.0] - 2025-10-07
 
 ### Fixed

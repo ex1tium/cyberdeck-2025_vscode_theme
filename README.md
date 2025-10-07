@@ -51,6 +51,9 @@
 - Lambda expressions
 - Modern Java syntax
 
+#### Lua
+- Complete coverage for all language features
+
 ### 🎯 Additional Features
 - **25+ Languages Supported**: C/C++, C#, PHP, Ruby, HTML/CSS, JSON, Markdown, and more
 - **Git Integration**: Clear visual indicators for changes
@@ -65,7 +68,6 @@
 
 ### Cyberdeck 2025 Theme Preview
 ![Cyberdeck 2025 Theme](screenshots/screenshot.png)
-*Experience the retro-futuristic cyberpunk aesthetic with deep purple backgrounds, vibrant neon accents, and comprehensive syntax highlighting*
 
 ---
 
@@ -170,6 +172,7 @@ For the best experience with Cyberdeck 2025:
 - ✅ Go
 - ✅ Python
 - ✅ Java
+- ✅ Lua
 - ✅ C / C++
 - ✅ C#
 - ✅ HTML / CSS / SCSS / LESS
@@ -178,7 +181,7 @@ For the best experience with Cyberdeck 2025:
 - ✅ Shell / Bash / Zsh
 
 ### Additional Support
-PHP, Ruby, Swift, Kotlin, Dart, Elixir, Haskell, Lua, SQL, GraphQL, and many more!
+PHP, Ruby, Swift, Kotlin, Dart, Elixir, Haskell, SQL, GraphQL, and many more!
 
 ---
 

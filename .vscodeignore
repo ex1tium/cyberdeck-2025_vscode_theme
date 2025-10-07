@@ -26,6 +26,10 @@ scripts/**
 Thumbs.db
 *.log
 
+# Language demos
+language_demos/**
+scripts/**
+
 # Keep these files in the package:
 # - README.md
 # - CHANGELOG.md
