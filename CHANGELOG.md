@@ -2,6 +2,12 @@
 
 All notable changes to the Cyberdeck 2025 theme extension.
 
+## [1.1.0] - 2025-10-07
+
+### Fixed
+- Added better Lua syntax highlighting
+- Added language demo files for testing
+
 ## [1.0.2] - 2025-10-06
 
 ### Fixed
