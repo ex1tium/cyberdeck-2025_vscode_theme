@@ -200,53 +200,6 @@ The theme uses consistent alpha values for layering:
 
 ---
 
-## Color Contrast Ratios
-
-All color combinations meet WCAG AA standards for readability:
-
-| Foreground | Background | Ratio | Grade |
-|------------|------------|-------|-------|
-| `#ded2cd` | `#130d1a` | 12.5:1 | AAA |
-| `#d4cdde` | `#130d1a` | 11.8:1 | AAA |
-| `#495495` | `#130d1a` | 4.8:1 | AA |
-| `#b141f1` | `#130d1a` | 5.2:1 | AA |
-| `#ff2289` | `#130d1a` | 6.1:1 | AA |
-| `#58c7e0` | `#130d1a` | 8.9:1 | AAA |
-| `#00ff88` | `#130d1a` | 12.1:1 | AAA |
-
----
-
-## Color Psychology
-
-The Cyberdeck palette is designed to evoke:
-
-- **Purple/Magenta:** Futuristic, digital, mysterious
-- **Cyan/Blue:** Technology, data, information
-- **Neon Green:** Matrix-style code, hacking, terminals
-- **Pink:** Energy, excitement, cyberpunk aesthetic
-- **Dark backgrounds:** Focus, immersion, reduced eye strain
-
----
-
-## Accessibility Notes
-
-### For Colorblind Users
-
-The theme uses multiple visual cues beyond color:
-- **Font styles:** Bold for keywords, italic for comments
-- **Brightness:** High contrast between elements
-- **Patterns:** Different colors for different token types
-
-### Tested Color Combinations
-
-All critical UI elements tested for:
-- ✅ Protanopia (red-blind)
-- ✅ Deuteranopia (green-blind)
-- ✅ Tritanopia (blue-blind)
-- ✅ Monochromacy (total colorblindness)
-
----
-
 ## Customization Guide
 
 ### For Users Who Want to Tweak Colors
@@ -289,22 +242,6 @@ Add to your `settings.json`:
 
 ---
 
-## Version History
-
-### v2.0.0 (Current)
-- Added semantic highlighting colors
-- Added modern VS Code feature colors (Chat, Command Center)
-- Refined color palette for better consistency
-- Improved contrast ratios
-
-### v1.0.0 (Original)
-- Initial color palette
-- 282 workbench colors
-- 134 syntax token rules
-- Support for 25+ languages
-
----
-
 ## Tools & Resources
 
 ### Color Picker Tools
@@ -319,18 +256,6 @@ Add to your `settings.json`:
 ### Testing
 - [Coblis](https://www.color-blindness.com/coblis-color-blindness-simulator/) - Colorblind simulator
 - [Contrast Ratio](https://contrast-ratio.com/) - Quick contrast checks
-
----
-
-## Contributing
-
-When proposing color changes:
-
-1. **Maintain the aesthetic** - Keep the cyberpunk/synthwave vibe
-2. **Check contrast** - Ensure readability (4.5:1 minimum)
-3. **Test thoroughly** - Try with multiple languages
-4. **Document changes** - Update this file with new colors
-5. **Provide rationale** - Explain why the change improves the theme
 
 ---
 
