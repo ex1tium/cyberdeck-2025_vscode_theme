@@ -2,6 +2,11 @@
 
 All notable changes to the Cyberdeck 2025 theme extension.
 
+## [1.1.2] - 2025-10-08
+
+- Added Zig support
+- Added more language demos in `language_demos` directory in the repository.
+
 ## [1.1.1] - 2025-10-07
 
 ### Fixed

@@ -55,7 +55,7 @@
 - Complete coverage for all language features
 
 ### 🎯 Additional Features
-- **25+ Languages Supported**: C/C++, C#, PHP, Ruby, HTML/CSS, JSON, Markdown, and more
+- **25+ Languages Supported**: Zig, C/C++, C#, PHP, Ruby, HTML/CSS, JSON, Markdown, and more
 - **Git Integration**: Clear visual indicators for changes
 - **Terminal Colors**: Custom ANSI palette matching the theme
 - **Bracket Pairs**: Styled bracket pair colorization
@@ -164,7 +164,115 @@ For the best experience with Cyberdeck 2025:
 
 ---
 
-## 🎯 Language Support
+## � Customization
+
+### Overriding Theme Colors
+
+You can customize any color in the Cyberdeck 2025 theme by adding overrides to your VS Code settings. This allows you to tweak specific colors while keeping the overall theme intact.
+
+#### How to Customize Colors
+
+1. Open VS Code Settings (`Ctrl+,` / `Cmd+,`)
+2. Click the "Open Settings (JSON)" icon in the top-right
+3. Add a `workbench.colorCustomizations` section with theme-specific overrides:
+
+```json
+{
+  "workbench.colorCustomizations": {
+    "[Cyberdeck 2025]": {
+      // Override any workbench colors here
+      "editor.background": "#0f0a15",           // Darker background
+      "statusBar.background": "#00ff88",        // Green status bar
+      "activityBar.background": "#1a0f20",      // Slightly lighter activity bar
+      "sideBar.background": "#150c1d"           // Custom sidebar color
+    }
+  },
+  "editor.tokenColorCustomizations": {
+    "[Cyberdeck 2025]": {
+      // Override syntax highlighting colors
+      "comments": "#8a9ba8",                    // Lighter comments
+      "keywords": "#ff6b9d",                    // Softer pink keywords
+      "strings": "#ffd23f",                     // Brighter yellow strings
+      "functions": "#4ecdc4",                   // Teal functions
+      "variables": "#a8e6cf"                    // Mint green variables
+    }
+  }
+}
+```
+
+#### Common Customizations
+
+**Adjust Background Darkness:**
+```json
+"workbench.colorCustomizations": {
+  "[Cyberdeck 2025]": {
+    "editor.background": "#0a0612",           // Even darker
+    "sideBar.background": "#0f0a15",
+    "activityBar.background": "#120a18"
+  }
+}
+```
+
+**Change Accent Colors:**
+```json
+"workbench.colorCustomizations": {
+  "[Cyberdeck 2025]": {
+    "statusBar.background": "#6c5ce7",        // Purple status bar
+    "activityBar.activeBorder": "#fd79a8",    // Pink active border
+    "button.background": "#00cec9"            // Cyan buttons
+  }
+}
+```
+
+**Modify Syntax Colors:**
+```json
+"editor.tokenColorCustomizations": {
+  "[Cyberdeck 2025]": {
+    "textMateRules": [
+      {
+        "scope": "keyword",
+        "settings": {
+          "foreground": "#e84393",             // Custom keyword color
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "string",
+        "settings": {
+          "foreground": "#fdcb6e"              // Custom string color
+        }
+      }
+    ]
+  }
+}
+```
+
+#### Finding Color Names
+
+To find the exact color names to override:
+
+1. **Workbench Colors**: Check the [VS Code Theme Color Reference](https://code.visualstudio.com/api/references/theme-color)
+2. **Syntax Colors**: Use the Command Palette (`Ctrl+Shift+P`) → "Developer: Inspect Editor Tokens and Scopes" to see token scopes
+3. **Current Theme Colors**: Use Command Palette → "Developer: Generate Color Theme From Current Settings" to see all current colors
+
+#### Reset Customizations
+
+To remove your customizations and return to the original theme:
+
+```json
+{
+  "workbench.colorCustomizations": {
+    "[Cyberdeck 2025]": {}
+  },
+  "editor.tokenColorCustomizations": {
+    "[Cyberdeck 2025]": {}
+  }
+}
+```
+
+---
+
+## �🎯 Language Support
 
 ### Fully Tested & Optimized
 - ✅ TypeScript / JavaScript / JSX / TSX
