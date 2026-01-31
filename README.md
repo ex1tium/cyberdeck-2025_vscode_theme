@@ -1,5 +1,13 @@
 # Cyberdeck 2025 🌃
 
+> ⚠️ **This extension has been superseded by [Cyberdeck](https://marketplace.visualstudio.com/items?itemName=ex1tium.cyberdeck)**
+>
+> The new version includes multiple theme variants, a build system for creating custom palettes, and continued development. Please install **[Cyberdeck](https://github.com/ex1tium/cyberdeck-vscode-themes)** for the latest updates.
+>
+> This repository is archived and will no longer receive updates.
+
+---
+
 > *A neo-retro-futuristic neural interface for the modern code cowboy.*
 
 [![Version](https://img.shields.io/visual-studio-marketplace/v/ex1tium.cyberdeck-2025?style=flat-square&color=b141f1)](https://marketplace.visualstudio.com/items?itemName=ex1tium.cyberdeck-2025)
